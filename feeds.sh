@@ -19,8 +19,9 @@
 echo "src-git kenzok https://github.com/kenzok8/openwrt-packages" >> openwrt/feeds.conf.default
 echo "src-git small https://github.com/kenzok8/small" >> openwrt/feeds.conf.default
 
-# Add Luci Poweroff APP
+# Add Luci Poweroff APP && istore
 git clone https://github.com/esirplayground/luci-app-poweroff.git openwrt/package/luci-app-poweroff
+git clone https://github.com/linkease/istore.git package/istore openwrt/package/luci-app-istore
 
 # Add Jerrykuku argon theme
 rm -rf package/lean/luci-theme-argon
