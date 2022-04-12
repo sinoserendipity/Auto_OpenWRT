@@ -13,3 +13,6 @@ sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' openwrt/package/lean/default-se
 
 #3. set default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' openwrt/feeds/luci/collections/luci/Makefile
+
+#4. set fireware information
+sed -i "s/OpenWrt /$(date +%Y.%m.%d) by ALANTARO /g" package/lean/default-settings/files/zzz-default-settings
