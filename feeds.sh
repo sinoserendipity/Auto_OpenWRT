@@ -21,7 +21,6 @@ echo "src-git liuran001_packages https://github.com/liuran001/openwrt-packages" 
 
 # Add Luci Poweroff APP && istore
 git clone https://github.com/esirplayground/luci-app-poweroff.git openwrt/package/luci-app-poweroff
-git clone https://github.com/linkease/istore.git package/istore openwrt/package/luci-app-store
 
 # Add Jerrykuku argon theme
 rm -rf package/lean/luci-theme-argon
