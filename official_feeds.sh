@@ -25,3 +25,4 @@
 # Add Jerrykuku argon theme
 #rm -rf package/lean/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git openwrt/package/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-app-argon-config openwrt/package/luci-app-argon-config
