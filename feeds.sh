@@ -16,11 +16,14 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-echo "src-git kenzok https://github.com/kenzok8/openwrt-packages" >> openwrt/feeds.conf.default
-echo "src-git liuran001_packages https://github.com/liuran001/openwrt-packages" >> openwrt/feeds.conf.default
+echo "src-git kenzok https://github.com/kenzok8/openwrt-packages.git" >> openwrt/feeds.conf.default
+echo "src-git kenzok_small https://github.com/kenzok8/small.git" >> openwrt/feeds.conf.default
+echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git" >> openwrt/feeds.conf.default
 
 # Add Luci Poweroff APP && istore
 git clone https://github.com/esirplayground/luci-app-poweroff.git openwrt/package/luci-app-poweroff
+git clone https://github.com/lisaac/luci-app-diskman openwrt/package/luci-app-diskman
+
 
 # Add Jerrykuku argon theme
 rm -rf package/lean/luci-theme-argon
